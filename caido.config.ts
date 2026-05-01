@@ -13,7 +13,7 @@ export default defineConfig({
   id,
   name: "Shift",
   description: "Delegate your work to Shift",
-  version: "2.3.2",
+  version: "1.2.0-bedrock-int",
   author: {
     name: "Caido Labs Inc.",
     email: "dev@caido.io",
