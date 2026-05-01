@@ -50,28 +50,6 @@ Shift Agents, the new micro-agent framework for Caido users.
 
 Build personalized micro-agents for tasks like XSS exploitation, WAF bypassing, or anything you can think of.
 
-## Demos
-<div>
-  <a href="https://www.loom.com/share/ac132e7b4ab645fdaa67c8a34a818fb2">
-    <p>Shift Core, Shift Memory, Shift Rename Demo - Watch Video</p>
-  </a>
-  <a href="https://www.loom.com/share/ac132e7b4ab645fdaa67c8a34a818fb2">
-    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/ac132e7b4ab645fdaa67c8a34a818fb2-329aa30b44cf128f-full.jpg">
-  </a>
-</div>
-
-<hr>
-
-<p>Shift Agents Demo</p>
-
-https://github.com/user-attachments/assets/20853016-cc60-4d49-b4f5-ec7a53eb86e7
-
-<hr />
-
-<p>Shift New Float Demo</p>
-
-https://github.com/user-attachments/assets/88a25f77-3eba-457a-927c-721abb70d759
-
 
 # Installation
 
