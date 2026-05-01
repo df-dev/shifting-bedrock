@@ -9,6 +9,7 @@ import {
 
 import type { AgentContext } from "@/agent/context";
 import { type ToolDisplay, ToolResult, type ToolResult as ToolResultType } from "@/agent/types";
+import { runInSandbox } from "@/utils/runInSandbox";
 
 const inputSchema = z.object({
   reason: z
@@ -101,19 +102,20 @@ export const PayloadBlobCreate = tool({
     "Generate a payload blob by evaluating JavaScript. You must also provide a very brief user-visible reason describing what was generated. The result is stored in-memory for the current agent run and can be referenced with §§§Blob§blobId§§§ in env-enabled tool inputs.",
   inputSchema,
   outputSchema,
-  execute: ({ reason, jsScript }, { experimental_context }): PayloadBlobCreateOutput => {
+  execute: async (
+    { reason, jsScript },
+    { experimental_context }
+  ): Promise<PayloadBlobCreateOutput> => {
     const context = experimental_context as AgentContext;
 
-    let scriptResult: unknown;
-    try {
-      scriptResult = eval(jsScript);
-    } catch (error) {
-      const detail = error instanceof Error ? error.message : "Unknown execution error";
+    const sandboxResult = await runInSandbox(jsScript);
+    if (sandboxResult.kind === "Error") {
       return ToolResult.err(
         "Payload script execution failed",
-        `JavaScript error: ${detail}. Fix the script and ensure the last expression returns payload content.`
+        `JavaScript error: ${sandboxResult.error}. Fix the script and ensure the last expression returns payload content.`
       );
     }
+    const scriptResult = sandboxResult.value;
 
     const normalized = normalizeScriptOutput(scriptResult);
     if (normalized.kind === "Error") {

@@ -5,7 +5,7 @@ import { createGlobalPersistence, defaultMergeStrategy, type Persistence } from 
 export abstract class GlobalStore<TModel, TMessage> {
   private model: TModel;
   private subscribers = new Set<(data: TModel) => void>();
-  private persistence: Persistence;
+  protected persistence: Persistence;
 
   constructor(filename: string) {
     this.model = this.createInitialModel();
