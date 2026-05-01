@@ -1,17 +1,3 @@
-<div align="center">
-  <img width="1000" alt="image" src="https://github.com/caido-community/.github/blob/main/content/banner.png?raw=true">
-
-  <br />
-  <br />
-  <a href="https://github.com/caido-community" target="_blank">Github</a>
-  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-  <a href="https://developer.caido.io/" target="_blank">Documentation</a>
-  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-  <a href="https://links.caido.io/www-discord" target="_blank">Discord</a>
-  <br />
-  <hr />
-</div>
-
 > [!WARNING]
 > **This is an unofficial fork of [caido-community/shift](https://github.com/caido-community/shift).**
 >
@@ -21,8 +7,7 @@
 
 # Shift
 
-Shift is an AI plugin that integrates state-of-the-art LLMs directly into Caido's UI. It allows for LLM-powered free-form HTTP modification in Replay, automatic contextualization of queries, and [supports many tools that AI can use to interface with Caido. ](https://github.com/CRITSoftware/shift/blob/main/packages/frontend/actionFunctions.txt).
-
+Shift is an AI plugin that integrates state-of-the-art LLMs directly into Caido's UI. It allows for LLM-powered free-form HTTP modification in Replay, automatic contextualization of queries, and supports many tools that AI can use to interface with Caido.
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/0641619d-b629-40c6-9aec-dc209deb8491" width=250>
@@ -50,15 +35,14 @@ Shift Agents, the new micro-agent framework for Caido users.
 
 Build personalized micro-agents for tasks like XSS exploitation, WAF bypassing, or anything you can think of.
 
-
 # Installation
 
-### From Plugin Store
+### From Releases
 
-1. Install this plugin via the Caido Plugin Store
-2. Press `shift + <space>`
+1. Download `plugin_package.zip` from the [latest release](https://github.com/df-dev/shifting-bedrock/releases/latest)
+2. Install in Caido by clicking the "Install Package" button in-app and uploading the zip
 
-### Manual Installation
+### Build from Source
 
 1. Install dependencies:
 
@@ -74,13 +58,3 @@ Build personalized micro-agents for tasks like XSS exploitation, WAF bypassing, 
 
 3. Install in Caido:
    - Upload the `dist/plugin_package.zip` file in Caido by clicking on the "Install Package" button in-app
-
-## Disclosures
-
-Per the [Caido Developer Policy](https://developer.caido.io/policy.html), we are required to inform you that, for this plugin:
-* External services are required for full access.
-* Server-side telemetry is collected (Opt-in - see [Privacy Policy](https://docs.google.com/document/d/1-x9f1iwsbgQJDIGfyeg3TsR4U_zwexfvdcqqGgbhbIU/edit?usp=sharing))
-
-**External services**
-
-Shift is an AI-powered plugin, so it will be communicating with our backend and SOTA AI models to accomplish the user's intent.
