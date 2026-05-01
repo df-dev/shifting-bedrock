@@ -12,6 +12,13 @@
   <hr />
 </div>
 
+> [!WARNING]
+> **This is an unofficial fork of [caido-community/shift](https://github.com/caido-community/shift).**
+>
+> It adds AWS Bedrock provider support via a workaround: credentials are entered in the Shift settings UI and used to call Bedrock directly from the frontend. This approach is not endorsed by the official project — the Caido SDK does not currently expose a backend provider registration API, so a fully integrated solution is not yet possible.
+>
+> For the official plugin, visit **[caido-community/shift](https://github.com/caido-community/shift)**.
+
 # Shift
 
 Shift is an AI plugin that integrates state-of-the-art LLMs directly into Caido's UI. It allows for LLM-powered free-form HTTP modification in Replay, automatic contextualization of queries, and [supports many tools that AI can use to interface with Caido. ](https://github.com/CRITSoftware/shift/blob/main/packages/frontend/actionFunctions.txt).
