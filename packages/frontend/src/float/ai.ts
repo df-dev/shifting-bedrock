@@ -112,7 +112,7 @@ export async function queryShift(sdk: FrontendSDK, input: ActionQueryInput): Pro
 
     if (result.finishReason === "error") {
       return Result.err(
-        "Generation failed. This could be a bug, if this happens again, please report this to the Caido team."
+        "Generation failed. This could be a bug, if this happens again, please report this to the Shifting Bedrock maintainer."
       );
     }
 

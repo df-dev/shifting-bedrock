@@ -204,7 +204,7 @@ export const useIndicatorManager = (sdk: FrontendSDK) => {
 
   const getShiftCollection = (): HTMLDivElement | undefined => {
     const collections = sdk.replay.getCollections();
-    const collection = collections.find((c) => c.name === "Shift");
+    const collection = collections.find((c) => c.name === "Shifting Bedrock");
     if (collection === undefined) {
       return undefined;
     }

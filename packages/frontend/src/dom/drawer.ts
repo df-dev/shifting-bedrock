@@ -47,7 +47,7 @@ export const useDrawerManager = (sdk: FrontendSDK) => {
   const displayDrawer = (root: Element) => {
     const container = document.createElement("div");
     container.className = "shift-agents-injection";
-    container.id = "plugin--shift";
+    container.id = "plugin--shifting-bedrock";
 
     root.appendChild(container);
 

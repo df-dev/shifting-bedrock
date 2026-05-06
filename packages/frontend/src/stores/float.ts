@@ -62,7 +62,7 @@ export const useFloatStore = defineStore("float", () => {
   };
 
   const closeFloat = () => {
-    const floatElement = document.querySelector("[data-plugin='shift-float']");
+    const floatElement = document.querySelector("[data-plugin='shifting-bedrock-float']");
     if (isPresent(floatElement)) {
       floatElement.remove();
     }

@@ -19,7 +19,7 @@ export const useBackgroundAgentsPanelManager = (sdk: FrontendSDK) => {
     }
 
     container = document.createElement("div");
-    container.id = "plugin--shift";
+    container.id = "plugin--shifting-bedrock";
     document.body.appendChild(container);
 
     app = createApp(BackgroundAgentsPanel);

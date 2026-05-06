@@ -12,7 +12,7 @@ import { useUIStore } from "@/stores/ui";
 import type { FrontendSDK } from "@/types";
 import { isPresent } from "@/utils/optional";
 
-const SHIFT_COLLECTION_NAME = "Shift";
+const SHIFT_COLLECTION_NAME = "Shifting Bedrock";
 
 const sessionToCollectionId = new Map<string, string | undefined>();
 

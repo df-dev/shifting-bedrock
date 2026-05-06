@@ -61,15 +61,15 @@ export const init = (sdk: FrontendSDK) => {
     width: "100%",
   });
 
-  root.id = `plugin--shift`;
+  root.id = `plugin--shifting-bedrock`;
 
   app.mount(root);
 
-  sdk.navigation.addPage("/shift", {
+  sdk.navigation.addPage("/shifting-bedrock", {
     body: root,
   });
 
-  sdk.sidebar.registerItem("Shift", "/shift", {
+  sdk.sidebar.registerItem("Shifting Bedrock", "/shifting-bedrock", {
     icon: "fas fa-wand-magic-sparkles",
   });
 

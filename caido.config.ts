@@ -8,16 +8,14 @@ import path from "path";
 import prefixwrap from "postcss-prefixwrap";
 import type { UserConfig } from "vite";
 
-const id = "shift";
+const id = "shifting-bedrock";
 export default defineConfig({
   id,
-  name: "Shift",
-  description: "Delegate your work to Shift",
+  name: "Shifting Bedrock",
+  description: "Temporary AWS Bedrock work-around",
   version: "2.3.2",
   author: {
-    name: "Caido Labs Inc.",
-    email: "dev@caido.io",
-    url: "https://caido.io",
+    name: "ChaosLlama Research",
   },
   plugins: [
     {

@@ -17,12 +17,12 @@ export const setupAgents = (sdk: FrontendSDK) => {
     onClick: () => uiStore.toggleDrawer(),
   });
 
-  sdk.commands.register("shift:toggle-drawer", {
-    name: "Toggle Shift Agents Drawer",
+  sdk.commands.register("shifting-bedrock:toggle-drawer", {
+    name: "Toggle Shifting Bedrock Agents Drawer",
     run: () => uiStore.toggleDrawer(),
   });
 
-  sdk.shortcuts.register("shift:toggle-drawer", ["shift", "control", "i"]);
+  sdk.shortcuts.register("shifting-bedrock:toggle-drawer", ["shift", "control", "i"]);
 
   sdk.replay.onCurrentSessionChange((event) => {
     const newSessionId = event.sessionId;

@@ -12,12 +12,12 @@ let lastCursorX: number | undefined;
 let lastCursorY: number | undefined;
 
 export const setupFloat = (sdk: FrontendSDK) => {
-  sdk.commands.register("shift:toggle-float", {
-    name: "Shift Floating Command",
+  sdk.commands.register("shifting-bedrock:toggle-float", {
+    name: "Shifting Bedrock Floating Command",
     run: () => spawnFloat(sdk),
-    group: "Shift",
+    group: "Shifting Bedrock",
   });
-  sdk.shortcuts.register("shift:toggle-float", ["shift", "control", "k"]);
+  sdk.shortcuts.register("shifting-bedrock:toggle-float", ["shift", "control", "k"]);
 
   document.addEventListener("mousemove", (e) => {
     lastCursorX = e.clientX;
@@ -29,13 +29,13 @@ const FLOAT_WIDTH = 500;
 const FLOAT_HEIGHT = 125;
 
 const spawnFloat = (sdk: FrontendSDK) => {
-  if (document.querySelector("[data-plugin='shift-float']")) {
+  if (document.querySelector("[data-plugin='shifting-bedrock-float']")) {
     return;
   }
 
   const container = document.createElement("div");
-  container.id = "plugin--shift";
-  container.dataset.plugin = "shift-float";
+  container.id = "plugin--shifting-bedrock";
+  container.dataset.plugin = "shifting-bedrock-float";
   container.style.position = "absolute";
   container.style.zIndex = "3000";
   document.body.appendChild(container);
