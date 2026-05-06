@@ -13,7 +13,7 @@ export default defineConfig({
   id,
   name: "Shifting Bedrock",
   description: "Temporary AWS Bedrock work-around",
-  version: "2.3.2",
+  version: "2.3.3",
   author: {
     name: "ChaosLlama Research",
   },
